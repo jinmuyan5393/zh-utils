@@ -1,0 +1,45 @@
+{
+  "name": "zh-util",
+  "version": "3.0.0",
+  "type": "module",
+  "description": "Typescript工具函数库",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "release": "gulp release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinmuyan888/zh-utils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinmuyan888/zh-utils/issues"
+  },
+  "homepage": "https://github.com/jinmuyan888/zh-utils#readme",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.12.11",
+    "@vitest/ui": "^1.6.0",
+    "chalk": "^5.3.0",
+    "cross-env": "^7.0.3",
+    "esno": "^4.7.0",
+    "gulp": "^5.0.0",
+    "inquirer": "^9.2.20",
+    "prettier": "^3.2.5",
+    "standard-version": "^9.5.0",
+    "tslib": "^2.6.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
