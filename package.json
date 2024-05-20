@@ -13,19 +13,29 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
-    "release": "gulp release"
+    "release": "gulp release",
+    "docs:dev": "gulp docsDev",
+    "docs:build": "gulp docsBuild",
+    "docs:serve": "gulp docsServe"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jinmuyan888/zh-utils.git"
+    "url": "git+https://github.com/jinmuyan5393/zh-utils.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "modules",
+    "utilities",
+    "tsup",
+    "vitepress"
+  ],
+  "author": "jinmuyan",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jinmuyan888/zh-utils/issues"
+    "url": "https://github.com/jinmuyan5393/zh-utils/issues"
   },
-  "homepage": "https://github.com/jinmuyan888/zh-utils#readme",
+  "homepage": "https://github.com/jinmuyan5393/zh-utils#readme",
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20.12.11",
