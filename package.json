@@ -13,6 +13,7 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
+    "new": "gulp newFunction",
     "release": "gulp release",
     "docs:dev": "gulp docsDev",
     "docs:build": "gulp docsBuild",

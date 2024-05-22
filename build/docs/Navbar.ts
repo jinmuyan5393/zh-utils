@@ -9,19 +9,15 @@ interface VitepressNavBar {
 }
 
 const generateNavBar = async () => {
-  const { browserAllDirectory, nodeAllDirectory, browserFunctionsArrays, nodeFunctionsArrays } = await buildFunction();
+  const { browserAllDirectory, browserFunctionsArrays } = await buildFunction();
 
   const allNavbar: VitepressNavBar[] = [];
-  const allFunctionArrays = { ...browserFunctionsArrays, ...nodeFunctionsArrays };
-  const allDirectory = [...browserAllDirectory, ...nodeAllDirectory];
+  const allFunctionArrays = { ...browserFunctionsArrays };
+  const allDirectory = [...browserAllDirectory];
   allDirectory.forEach((module) => {
     const generateItem: VitepressNavBar = { text: '', link: '' };
     generateItem.text = `${module.replace(module[0], module[0].toUpperCase())}`;
-    if (module === 'Node') {
-      generateItem.link = `/${module}/${allFunctionArrays[module][0]}`;
-    } else {
-      generateItem.link = `/${module}/${allFunctionArrays[module][0]}/`;
-    }
+    generateItem.link = `/${module}/${allFunctionArrays[module][0]}/`;
     allNavbar.push(generateItem);
   });
 

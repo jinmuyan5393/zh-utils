@@ -17,6 +17,9 @@ importers:
       vue:
         specifier: ^3.3.10
         version: 3.4.27
+      zh-jsutil:
+        specifier: ^1.1.0
+        version: 1.1.0
     devDependencies:
       '@rollup/plugin-alias':
         specifier: ^5.1.0
@@ -764,6 +767,9 @@ packages:
 
   web-namespaces@2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
+
+  zh-jsutil@1.1.0:
+    resolution: {integrity: sha512-yG3NuYqR3qgdiV8UgHHvKZqvQrpVSbkxI2YzDp37isva/FwPJjE2c1MdysihN+CahiAoPEIxxd+Mqksn2N+hew==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -1542,5 +1548,7 @@ snapshots:
       '@vue/shared': 3.4.27
 
   web-namespaces@2.0.1: {}
+
+  zh-jsutil@1.1.0: {}
 
   zwitch@2.0.4: {}

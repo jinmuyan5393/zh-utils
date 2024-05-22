@@ -10,14 +10,16 @@ function degreesToRadians(degrees: number) {
   return (degrees * Math.PI) / 180;
 }
 
-
 /**
  * @description 计算两点之间的距离
  * @param origin 起始点
  * @param target 目标点
  * @returns distance 单位km
  */
-export function calculateDistance(origin: { latitude: number; longitude: number }, target: { latitude: number; longitude: number }) {
+export function calculateDistance(
+  origin: { latitude: number; longitude: number },
+  target: { latitude: number; longitude: number },
+) {
   const earthRadiusKm = 6371;
   const { latitude: lat1, longitude: lon1 } = origin;
   const { latitude: lat2, longitude: lon2 } = target;

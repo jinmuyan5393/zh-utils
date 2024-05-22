@@ -9,7 +9,7 @@ interface VitepressSidebar {
 }
 
 const buildSidebar = async () => {
-  const { browserFunctionsArrays, nodeFunctionsArrays } = await buildFunction();
+  const { browserFunctionsArrays } = await buildFunction();
 
   /**
    * 生成Browser模块侧边栏
@@ -29,27 +29,8 @@ const buildSidebar = async () => {
     return generateSidebar;
   };
 
-  /**
-   * 生成Node模块侧边栏
-   */
-  const generateNodeSidebar = async () => {
-    const generateSidebar: VitepressSidebar[] = [];
-    for (const key in nodeFunctionsArrays) {
-      const SidebarItem: VitepressSidebar = { text: '', items: [] };
-      SidebarItem.text = `${key.replace(key[0], key[0].toUpperCase())} Functions`;
-      SidebarItem.items = nodeFunctionsArrays[key].map((name) => ({
-        text: name,
-        link: `/${key}/${name}`,
-      }));
-      generateSidebar.push(SidebarItem);
-    }
-
-    return generateSidebar;
-  };
-
   const browserSidebar = await generateBrowserSidebar();
-  const nodeSidebar = await generateNodeSidebar();
-  const allSidebar = [...browserSidebar, ...nodeSidebar];
+  const allSidebar = [...browserSidebar];
 
   // 生成文档侧边栏
   await writeFileSync(

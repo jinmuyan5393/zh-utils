@@ -1,28 +1,7 @@
 /*
  * @Description: 其他工具函数
  * @Author: jinmuyan
- * @LastEditTime: 2024-05-20 10:26:00
+ * @LastEditTime: 2024-05-22 11:32:00
  */
 
-/**
- * @description 生成唯一的uuid
- * @returns uuid
- */
-export function generateUUID() {
-  let uuid = '';
-  for (let i = 0; i < 32; i++) {
-    const random = (Math.random() * 16) | 0;
-    if (i === 8 || i === 12 || i === 16 || i === 20) uuid += '-';
-    uuid += (i === 12 ? 4 : i === 16 ? (random & 3) | 8 : random).toString(16);
-  }
-  return uuid;
-}
-
-/**
- * @description 添加单位
- * @param  value 值 100
- * @param  unit 单位 px em rem
- */
-export const addUnit = (value: string | number, unit = "px") => {
-  return !Object.is(Number(value), NaN) ? `${value}${unit}` : value;
-};
+export { default as generateUUID } from './generateUUID';

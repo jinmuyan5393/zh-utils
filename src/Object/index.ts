@@ -47,7 +47,7 @@ export function cloneDeep(value: any, clonedMap = new WeakMap()) {
   if (value instanceof Set) {
     const newSet = new Set();
     clonedMap.set(value, newSet);
-    value.forEach(item => {
+    value.forEach((item) => {
       newSet.add(cloneDeep(item, clonedMap));
     });
     return newSet;

@@ -10,7 +10,7 @@
  * @returns
  */
 export function base64ToFile(base64: string, fileName: string) {
-  const arr = base64.split(",");
+  const arr = base64.split(',');
   const mime = arr[0]?.match(/:(.*?);/)?.[1];
   const bytes = atob(arr[1]);
   let n = bytes.length;
