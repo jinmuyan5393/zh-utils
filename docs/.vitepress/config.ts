@@ -42,17 +42,13 @@ export default defineConfig({
   themeConfig: {
     nav: docsNavbar,
     sidebar: docsSidebar,
-    socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/flypeng-tool' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/jinmuyan5393/zh-utils' }],
     search: {
       provider: 'local',
     },
     outline: {
       label: '大纲',
       level: [2, 3],
-    },
-    editLink: {
-      pattern: 'https://github.com/flingyp/flypeng-tool/blob/dev/docs/:path',
-      text: 'Edit this p,age on GitHub',
     },
     lastUpdatedText: 'Last updated',
   },

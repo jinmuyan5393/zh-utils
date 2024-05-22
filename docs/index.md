@@ -15,7 +15,7 @@ hero:
       link: /guide/
     - theme: alt
       text: View on GitHub
-      link: <https://github.com/jinmuyan5393/zh-utils>
+      link: https://github.com/jinmuyan5393/zh-utils
 
 features:
 - title: 工具函数丰富

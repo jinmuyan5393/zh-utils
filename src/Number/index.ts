@@ -29,3 +29,5 @@ export function verifyNumberCnUppercase(val: any, unit = '仟佰拾亿仟佰拾�
   // 返回结果
   return v;
 }
+
+export { default as numberSeparate } from './numberSeparate';

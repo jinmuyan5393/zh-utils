@@ -16,8 +16,8 @@ async function initRelease() {
   execSync('npm run build', { stdio: 'inherit' });
   outChalkLog.info('zh-utils 完成打包');
 
-  // execSync('npm run docs:build', { stdio: 'inherit' });
-  // outChalkLog.info('@flypeng/tool 完成文档相关配置更新');
+  execSync('npm run docs:build', { stdio: 'inherit' });
+  outChalkLog.info('zh-jsutil 完成文档相关配置更新');
 
   const version = await inquireVersion();
   execSync(`standard-version --release-as ${version}`, { stdio: 'inherit' });
