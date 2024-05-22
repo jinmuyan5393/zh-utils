@@ -6,7 +6,7 @@ const { isNull, isUndefined, isDate, isRegExp, isObject } = commonType;
  * @param hashMap
  * @returns
  */
-export default function useDeepClone(targetObj: any, hashMap = new WeakMap()) {
+export default function cloneDeep(targetObj: any, hashMap = new WeakMap()) {
   if (isNull(targetObj) || isUndefined(targetObj)) return targetObj;
   if (isDate(targetObj)) return new Date(targetObj);
   if (isRegExp(targetObj)) return new RegExp(targetObj);
@@ -18,7 +18,7 @@ export default function useDeepClone(targetObj: any, hashMap = new WeakMap()) {
   // 将 targetObj 和 resultObj 对应起来，防止重复引用的情况
   hashMap.set(targetObj, resultObj);
   for (const key in targetObj) {
-    resultObj[key] = useDeepClone(targetObj[key], hashMap);
+    resultObj[key] = cloneDeep(targetObj[key], hashMap);
   }
   return resultObj;
 }
