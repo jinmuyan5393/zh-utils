@@ -101,7 +101,7 @@ describe('${hookName}', () => {
 ## Type Declaration
 
 ## Online Demo
-		`,
+`,
       { encoding: 'utf-8' },
     );
 
