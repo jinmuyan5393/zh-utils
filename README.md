@@ -41,3 +41,14 @@ console.log(tree);
 const list = treeToArray(tree, , { children: 'children' });
 console.log(list);
 ```
+
+### Mock数据模拟相关
+
+随机生成车牌号
+
+```ts
+import { generateLicensePlate } from 'zh-jsutil';
+
+const license = generateLicensePlate();
+console.log(license);
+```
