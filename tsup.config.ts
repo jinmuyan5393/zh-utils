@@ -20,6 +20,7 @@ export default defineConfig([
     globalName: 'zh',
     outExtension({ format }) {
       if (format === 'iife') return { js: '.browser.js' };
+      if (format === 'esm') return { js: '.mjs.js' }
       return { js: `.${format}.js` };
     },
     ...commonConfig,

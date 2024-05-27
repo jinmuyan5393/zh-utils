@@ -3,6 +3,7 @@ export * from './Array';
 export * from './File';
 export * from './Function';
 export * from './Lang';
+export * from './Mock';
 export * from './Number';
 export * from './Object';
 export * from './String';
