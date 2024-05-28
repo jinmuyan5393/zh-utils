@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/jinmuyan5393/zh-utils/compare/v1.1.6...v0.0.2) (2024-05-28)
+
 ### [1.1.6](https://github.com/jinmuyan5393/zh-utils/compare/v1.1.5...v1.1.6) (2024-05-28)
 
 ### [1.1.5](https://github.com/jinmuyan5393/zh-utils/compare/v1.1.4...v1.1.5) (2024-05-28)
