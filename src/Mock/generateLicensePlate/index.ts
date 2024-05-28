@@ -37,7 +37,7 @@ export default function generateLicensePlate() {
   let plateNumber = province[provinceIndex];
 
   // 生成车牌号码数字和字母部分
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
     if (i < 2) {
       // 前两位为大写字母
       plateNumber += String.fromCharCode(65 + Math.floor(Math.random() * 26));

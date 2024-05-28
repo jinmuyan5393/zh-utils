@@ -5,38 +5,38 @@
 
 # Get Started
 
-**<span style="color: var(--vp-c-brand); font-size: 16px;">zh-jsutil</span>** 是一个集成业务中常用的工具函数库。集成封装常用业务函数库，可以极大程度上的提高开发者的效率。
+**<span style="color: var(--vp-c-brand); font-size: 16px;">@zhonghe/utils</span>** 是一个集成业务中常用的工具函数库。集成封装常用业务函数库，可以极大程度上的提高开发者的效率。
 
 当前版本：<span style="color: var(--vp-c-brand); font-weight: 600; font-size: 16px;">v{{version}}</span>
 
 ## Installation
 
-<img src="https://img.shields.io/npm/v/zh-jsutil?style=plastic&logo=npm&label=zh-jsutil&link=https://www.npmjs.com/package/zh-jsutil" alt="zh-jsutil" style="margin-top: 10px" />
+<img src="https://img.shields.io/npm/v/@zhonghe/utils?style=plastic&logo=npm&label=@zhonghe/utils&link=https://www.npmjs.com/package/@zhonghe/utils" alt="@zhonghe/utils" style="margin-top: 10px" />
 
 ::: code-group
 
 ```sh [npm]
-npm install zh-jsutil
+npm install @zhonghe/utils
 ```
 
 ```sh [yarn]
-yarn add zh-jsutil
+yarn add @zhonghe/utils
 ```
 
 ```sh [pnpm]
-pnpm add zh-jsutil
+pnpm add @zhonghe/utils
 ```
 
 :::
 
 ## Usage Example
 
-### `zh-jsutil`
+### `@zhonghe/utils`
 
 集成所有浏览器环境下的工具函数
 
 ```ts
-import { generateUUID } from 'zh-jsutil';
+import { generateUUID } from '@zhonghe/utils';
 
 const uuid = generateUUID();
 ```
@@ -52,7 +52,7 @@ const uuid = generateUUID();
 
 ```js
 // All non-Node module methods are injected into the zh global variable
-<script src="https://unpkg.com/zh-jsutil@${version}/index.browser.js"></script>
+<script src="https://unpkg.com/@zhonghe/utils@${version}/index.browser.js"></script>
 <script type="text/javascript">
  console.log(zh)
 </script>

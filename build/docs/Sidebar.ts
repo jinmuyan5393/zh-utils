@@ -18,7 +18,7 @@ const buildSidebar = async () => {
     const generateSidebar: VitepressSidebar[] = [];
     for (const key in browserFunctionsArrays) {
       const SidebarItem: VitepressSidebar = { text: '', items: [] };
-      SidebarItem.text = `${key.replace(key[0], key[0].toUpperCase())} Functions`;
+      SidebarItem.text = `${key.replace(key[0], key[0].toUpperCase())} 函数`;
       SidebarItem.items = browserFunctionsArrays[key].map((name) => ({
         text: name,
         link: `/${key}/${name}/`,

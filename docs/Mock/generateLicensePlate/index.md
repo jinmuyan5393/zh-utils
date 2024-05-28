@@ -1,18 +1,25 @@
 # generateLicensePlate
 
-## Introduction
+## 函数描述
 
 随机生成车牌号
 
-## Basic Usage
+## 基础用法
 
 ```ts
-import { generateLicensePlate } from 'zh-jsutil';
+import { generateLicensePlate } from '@zhonghe/utils';
 
 const license = generateLicensePlate();
 console.log(license);
 ```
 
-## Type Declaration
+## 类型声明
 
-## Online Demo
+```ts
+/** 随机生成车牌号 */
+declare function generateLicensePlate(): string;
+```
+
+## 在线 Demo
+
+<preview path="./index.vue" title="commonType" description="基础类型判断"></preview>

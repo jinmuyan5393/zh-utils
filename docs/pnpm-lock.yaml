@@ -14,12 +14,12 @@ importers:
       '@vitepress-demo-preview/plugin':
         specifier: ^1.2.2
         version: 1.2.3(markdown-it-container@3.0.0)(vitepress@1.0.0-rc.31(@algolia/client-search@4.23.3)(postcss@8.4.38)(search-insights@2.13.0))(vue@3.4.27)
+      '@zhonghe/utils':
+        specifier: ^0.0.2
+        version: 0.0.2
       vue:
         specifier: ^3.3.10
         version: 3.4.27
-      zh-jsutil:
-        specifier: ^1.1.0
-        version: 1.1.0
     devDependencies:
       '@rollup/plugin-alias':
         specifier: ^5.1.0
@@ -500,6 +500,9 @@ packages:
   '@vueuse/shared@10.9.0':
     resolution: {integrity: sha512-Uud2IWncmAfJvRaFYzv5OHDli+FbOzxiVEQdLCKQKLyhz94PIyFC3CHcH7EDMwIn8NPtD06+PNbC/PiO0LGLtw==}
 
+  '@zhonghe/utils@0.0.2':
+    resolution: {integrity: sha512-z4KfbBsgRMT3HjhCW3EN03MCh+uqelfDNUSASZ0q7MsMBP08UZgOHC0z3cjGyj1nPV1FyxTICiADB2FCimNjNA==}
+
   algoliasearch@4.23.3:
     resolution: {integrity: sha512-Le/3YgNvjW9zxIQMRhUHuhiUjAlKY/zsdZpfq4dlLqg6mEm0nL6yk+7f2hDOtLpxsgE4jSzDmvHL7nXdBp5feg==}
 
@@ -767,9 +770,6 @@ packages:
 
   web-namespaces@2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
-
-  zh-jsutil@1.1.0:
-    resolution: {integrity: sha512-yG3NuYqR3qgdiV8UgHHvKZqvQrpVSbkxI2YzDp37isva/FwPJjE2c1MdysihN+CahiAoPEIxxd+Mqksn2N+hew==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -1173,6 +1173,8 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
+  '@zhonghe/utils@0.0.2': {}
+
   algoliasearch@4.23.3:
     dependencies:
       '@algolia/cache-browser-local-storage': 4.23.3
@@ -1548,7 +1550,5 @@ snapshots:
       '@vue/shared': 3.4.27
 
   web-namespaces@2.0.1: {}
-
-  zh-jsutil@1.1.0: {}
 
   zwitch@2.0.4: {}

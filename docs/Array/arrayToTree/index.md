@@ -1,13 +1,13 @@
 # arrayToTree
 
-## Introduction
+## 函数描述
 
 数组格式转树形结构
 
-## Basic Usage
+## 基础用法
 
 ```ts
-import { arrayToTree } from "zh-jsutil";
+import { arrayToTree } from "@zhonghe/utils";
 
 const data = [
   { id: 1, name: "Node 1", pid: null },
@@ -23,7 +23,7 @@ console.log(tree);
 
 ```
 
-## Type Declaration
+## 类型声明
 
 ```ts
 /**
@@ -40,3 +40,5 @@ declare function arrayToTree(data: any[], props?: {
 ```
 
 ## Online Demo
+
+<preview path="./index.vue" title="arrayToTree" description="数组转树形结构"></preview>

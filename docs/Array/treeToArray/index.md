@@ -1,13 +1,13 @@
 # treeToArray
 
-## Introduction
+## 函数描述
 
 树形结构转list
 
-## Basic Usage
+## 基础用法
 
 ```ts
-import { treeToArray } from 'zh-jsutil';
+import { treeToArray } from '@zhonghe/utils';
 const tree = [
   {
     id: 1,
@@ -48,7 +48,7 @@ const list = treeToArray(tree, { children: 'children' });
 console.log(list);
 ```
 
-## Type Declaration
+## 类型声明
 
 ```ts
 /**
@@ -60,5 +60,3 @@ declare function treeToArray(data: any[], props?: {
     children: string;
 }): any[];
 ```
-
-## Online Demo

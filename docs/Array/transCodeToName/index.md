@@ -1,13 +1,13 @@
 # transCodeToName
 
-## Introduction
+## 函数描述
 
 根据code值 转换为对应中文, 常用于字典数据的转换
 
-## Basic Usage
+## 基础用法
 
 ```ts
-import { transCodeToName } from 'zh-jsutil';
+import { transCodeToName } from '@zhonghe/utils';
 
 // 字典数据转换  (code => label)
 const sourceList = [
@@ -26,7 +26,7 @@ console.log(label); // 输出: 选项二
 
 ```
 
-## Type Declaration
+## 类型声明
 
 ```ts
 /**
@@ -40,5 +40,3 @@ console.log(label); // 输出: 选项二
 declare function transCodeToName(sourceList: any[], code: any, 
   valueKey?: string, labelKey?: string): string;
 ```
-
-## Online Demo

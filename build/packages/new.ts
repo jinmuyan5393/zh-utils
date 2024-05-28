@@ -94,11 +94,11 @@ describe('${hookName}', () => {
       docsEntryPath,
       `# ${hookName}
 
-## Introduction
+## 函数描述
 
-## Basic Usage
+## 基础用法
 
-## Type Declaration
+## 类型声明
 
 ## Online Demo
 `,

@@ -3,19 +3,16 @@ layout: home
 sidebar: false
 
 hero:
-  name: 'zh-jsutil'
+  name: '@zhonghe/utils'
   text: 工具函数集合
   tagline: 常用JavaScript 工具函数集合
   image:
     src: /favicon.ico
-    alt: 'zh-jsutil'
+    alt: '@zhonghe/utils'
   actions:
     - theme: brand
-      text: Get Started
+      text: 快速开始
       link: /guide/
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/jinmuyan5393/zh-utils
 
 features:
 - title: 工具函数丰富

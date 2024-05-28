@@ -1,24 +1,25 @@
-<!--
- * @Description:  
- * @Author: jinmuyan
- * @LastEditTime: 2024-05-22 11:34:27
--->
 # generateUUID
 
-## Introduction
+## 函数描述
 
 生成唯一的UUID
 
-## Basic Usage
+## 基础用法
 
 ```ts
 
-import { generateUUID } from 'zh-jsutil'
+import { generateUUID } from '@zhonghe/utils'
 
 const uuid = generateUUID();
-
+console.log(uuid);
 ```
 
-## Type Declaration
+## 类型声明
 
-## Online Demo
+```ts
+/**
+ * @description 生成唯一的uuid
+ * @returns uuid
+ */
+declare function generateUUID(): string;
+```

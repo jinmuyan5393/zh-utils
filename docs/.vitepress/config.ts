@@ -6,31 +6,31 @@ import navbar from '../nav-bar';
 
 const defaultSidebar = [
   {
-    text: 'Guide',
+    text: '指南',
     items: [
-      { text: 'Get Started', link: '/guide/' },
-      { text: 'Create Function', link: '/guide/devFunction' },
-      { text: 'Contribution', link: '/guide/contribution' },
+      { text: '快速开始', link: '/guide/' },
+      { text: '创建函数', link: '/guide/devFunction' },
+      { text: '贡献', link: '/guide/contribution' },
     ],
   },
 ];
 
 const docsSidebar = [...defaultSidebar, ...sidebar];
 
-const guideNavbar = [{ text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] }];
+const guideNavbar = [{ text: '指南', items: [{ text: '快速开始', link: '/guide/' }] }];
 
 const navbarModules = navbar.map((module: DefaultTheme.NavItemWithLink) => {
   return {
-    text: `${module.text} Functions`,
+    text: `${module.text} 函数`,
     link: module.link,
   };
 });
 
-const docsNavbar = [...guideNavbar, { text: 'Modules', items: navbarModules }];
+const docsNavbar = [...guideNavbar, { text: '函数模块', items: navbarModules }];
 
 export default defineConfig({
   base: '/',
-  title: 'zh-jsutil',
+  title: '@zhonghe/utils',
   description: 'Integrate a collection of common tools and methods',
   lastUpdated: true,
   markdown: {
