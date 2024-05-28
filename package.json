@@ -28,10 +28,6 @@
     "docs:build": "gulp docsBuild",
     "docs:serve": "gulp docsServe"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jinmuyan5393/zh-utils.git"
-  },
   "keywords": [
     "javascript",
     "typescript",

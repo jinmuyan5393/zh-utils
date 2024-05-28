@@ -21,14 +21,14 @@ async function initRelease() {
 
   const version = await inquireVersion();
   execSync(`standard-version --release-as ${version}`, { stdio: 'inherit' });
-  execSync('npm publish', { stdio: 'inherit' });
-  outChalkLog.success(`zh-utils-${version} 新版本发布成功`);
+  execSync('npm publish --access=public', { stdio: 'inherit' });
+  outChalkLog.success(`@zhonghe/utils-${version} 新版本发布成功`);
 
   execSync('git push origin main', { stdio: 'inherit' });
   execSync('git push origin --tags', { stdio: 'inherit' });
   outChalkLog.info('代码已提交到远程仓库中');
 
-  outChalkLog.success(`🎉🎉🎉 @zh-utils-${version} 新版本发布成功 🎉🎉🎉`);
+  outChalkLog.success(`🎉🎉🎉 @zhonghe/utils-${version} 新版本发布成功 🎉🎉🎉`);
 }
 
 initRelease();
