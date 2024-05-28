@@ -1,6 +1,6 @@
 {
-  "name": "zh-jsutil",
-  "version": "1.1.4",
+  "name": "@zhonghe/utils",
+  "version": "1.1.5",
   "type": "module",
   "module": "./dist/index.mjs.js",
   "main": "./dist/index.cjs.js",
@@ -45,7 +45,7 @@
   "bugs": {
     "url": "https://github.com/jinmuyan5393/zh-utils/issues"
   },
-  "homepage": "https://github.com/jinmuyan5393/zh-utils#readme",
+  "homepage": "https://shenjianaa.github.io/",
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20.12.11",
