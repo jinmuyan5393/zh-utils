@@ -5,3 +5,5 @@
  */
 
 export { default as generateUUID } from './generateUUID';
+
+export { default as numberToUpperCase } from './numberToUpperCase';

@@ -43,8 +43,8 @@ const createHook = async () => {
   const hookName = await inquireHookName();
   let isNeedTestFile = false;
   let isNeedPreviewFile = false;
-    isNeedTestFile = (await inquireIsNeed('Whether test file are required', isNeedTestFile)) as boolean;
-    isNeedPreviewFile = (await inquireIsNeed('Whether preview file are required', isNeedPreviewFile)) as boolean;
+    isNeedTestFile = (await inquireIsNeed('是否需要单元测试', isNeedTestFile)) as boolean;
+    isNeedPreviewFile = (await inquireIsNeed('是否需要在线预览', isNeedPreviewFile)) as boolean;
 
   let hookPath = '';
     const hookDirPath = resolve(packagePath, `./${moduleName}`, `./${hookName}`);
@@ -98,7 +98,16 @@ describe('${hookName}', () => {
 
 ## 基础用法
 
+\`\`\`ts
+import { ${hookName} } from "@zhonghe/utils";
+
+\`\`\`
+
 ## 类型声明
+
+\`\`\`ts
+
+\`\`\`
 
 ## Online Demo
 `,
