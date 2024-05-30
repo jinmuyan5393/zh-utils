@@ -6,6 +6,7 @@ export * from './Lang';
 export * from './Mock';
 export * from './Number';
 export * from './Object';
+export * from './Storage';
 export * from './String';
 export * from './Util';
 export * from './Validate';

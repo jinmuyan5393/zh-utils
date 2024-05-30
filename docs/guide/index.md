@@ -1,13 +1,7 @@
-
-<script setup lang="ts">
- import { version } from '../info'
-</script>
-
 # Get Started
 
 **<span style="color: var(--vp-c-brand); font-size: 16px;">@zhonghe/utils</span>** 是一个集成业务中常用的工具函数库。集成封装常用业务函数库，可以极大程度上的提高开发者的效率。
 
-当前版本：<span style="color: var(--vp-c-brand); font-weight: 600; font-size: 16px;">v{{version}}</span>
 
 ## Installation
 

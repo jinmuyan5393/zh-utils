@@ -9,3 +9,7 @@ export { default as numFloatValidate } from './numFloatValidate';
 export { default as integerValidate } from './integerValidate';
 
 export { default as numFloat2Validate } from './numFloat2Validate';
+
+export { default as licensePlateValidate } from './licensePlateValidate';
+
+export { default as archiveNumberValidate } from './archiveNumberValidate';

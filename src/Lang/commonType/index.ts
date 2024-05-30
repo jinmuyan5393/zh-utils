@@ -30,6 +30,24 @@ const isMobile = () => {
 
 const typeToString = (value: unknown) => objectToString.call(value);
 
+function isNullOrUndef(t: any) {
+  return isNull(t) || isUndefined(t);
+}
+
+function isAllEmpty(t: any) {
+  return !!(isEmpty(t) || isNullOrUndef(t));
+}
+
+function isEmpty(t: any) {
+  return isArray(t) || isString(t)
+    ? t.length === 0
+    : t instanceof Map || t instanceof Set
+      ? t.size === 0
+      : isObject(t)
+        ? Object.keys(t).length === 0
+        : false;
+}
+
 export default {
   isUndefined,
   isString,
@@ -46,4 +64,5 @@ export default {
   isWechatBrowser,
   isMobile,
   typeToString,
+  isAllEmpty,
 };
