@@ -1,9 +1,9 @@
-# Get Started
+# 快速开始
 
 **<span style="color: var(--vp-c-brand); font-size: 16px;">@zhonghe/utils</span>** 是一个集成业务中常用的工具函数库。集成封装常用业务函数库，可以极大程度上的提高开发者的效率。
 
 
-## Installation
+## 安装
 
 <img src="https://img.shields.io/npm/v/@zhonghe/utils?style=plastic&logo=npm&label=@zhonghe/utils&link=https://www.npmjs.com/package/@zhonghe/utils" alt="@zhonghe/utils" style="margin-top: 10px" />
 
@@ -23,9 +23,7 @@ pnpm add @zhonghe/utils
 
 :::
 
-## Usage Example
-
-### `@zhonghe/utils`
+## 示例
 
 集成所有浏览器环境下的工具函数
 
@@ -35,7 +33,7 @@ import { generateUUID } from '@zhonghe/utils';
 const uuid = generateUUID();
 ```
 
-## Usage CDN
+## CDN
 
 :::tip
 
@@ -52,7 +50,7 @@ const uuid = generateUUID();
 </script>
 ```
 
-## Technology Stack
+## 技术参考
 
 - [tsup](https://github.com/egoist/tsup) 构建工具
 - [vitest](https://github.com/vitest-dev/vitest) 测试工具

@@ -17,3 +17,5 @@ export { default as toggleClass } from './toggleClass';
 export { default as hasClass } from './hasClass';
 
 export { default as isBoolean } from './isBoolean';
+
+export { default as openLink } from './openLink';

@@ -7,10 +7,10 @@ import navbar from '../nav-bar';
 const defaultSidebar = [
   {
     text: '指南',
+    collapsed: false,
     items: [
       { text: '快速开始', link: '/guide/' },
-      { text: '创建函数', link: '/guide/devFunction' },
-      { text: '贡献', link: '/guide/contribution' },
+      { text: '创建函数', link: '/guide/devFunction' }
     ],
   },
 ];

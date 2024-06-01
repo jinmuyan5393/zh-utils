@@ -4,6 +4,7 @@ import buildFunction from './common';
 
 interface VitepressSidebar {
   text: string;
+  collapsed?: boolean,
   link?: string;
   items?: { text: string; link: string }[];
 }
@@ -17,7 +18,7 @@ const buildSidebar = async () => {
   const generateBrowserSidebar = async () => {
     const generateSidebar: VitepressSidebar[] = [];
     for (const key in browserFunctionsArrays) {
-      const SidebarItem: VitepressSidebar = { text: '', items: [] };
+      const SidebarItem: VitepressSidebar = { text: '', collapsed: false, items: [] };
       SidebarItem.text = `${key.replace(key[0], key[0].toUpperCase())} 函数`;
       SidebarItem.items = browserFunctionsArrays[key].map((name) => ({
         text: name,
