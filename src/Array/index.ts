@@ -7,3 +7,9 @@ export { default as arrayToTree } from './arrayToTree';
 export { default as treeToArray } from './treeToArray';
 
 export { default as transCodeToName } from './transCodeToName';
+
+export { default as intersection } from './intersection';
+
+export { default as isIncludeAllChildren } from './isIncludeAllChildren';
+
+export { default as getKeyList } from './getKeyList';

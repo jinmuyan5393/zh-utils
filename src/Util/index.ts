@@ -7,3 +7,13 @@
 export { default as generateUUID } from './generateUUID';
 
 export { default as numberToUpperCase } from './numberToUpperCase';
+
+export { default as copyTextToClipboard } from './copyTextToClipboard';
+
+export { default as deviceDetection } from './deviceDetection';
+
+export { default as toggleClass } from './toggleClass';
+
+export { default as hasClass } from './hasClass';
+
+export { default as isBoolean } from './isBoolean';
